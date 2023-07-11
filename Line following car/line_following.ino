@@ -1,6 +1,6 @@
 #include "motor_lib.h"
-  //  motor(4,"forward",s);
-    // _delay_ms(165);
+//motor(motor number,rotaion direction,rotation speed)
+//This function imported from user defined library motor_lib.h
 void setup(){
   
   volatile int *ddrc=0x27,*inc=0x26;
@@ -8,9 +8,9 @@ void setup(){
   
   while(1){
     
-    if(*inc==0){
-     motor(1,"forward",165);
-     motor(2,"forward",165);
+  if(*inc==0){
+    motor(1,"forward",165);
+    motor(2,"forward",165);
     motor(3,"forward",165);
     motor(4,"forward",165);
   }
@@ -28,9 +28,9 @@ void setup(){
   }
   else if(*inc==0x03){
     motor(1,"stops",165);
-     motor(2,"stops",165);
-     motor(3,"stops",165);
-     motor(4,"stops",165);
+    motor(2,"stops",165);
+    motor(3,"stops",165);
+    motor(4,"stops",165);
   }
 }
 }
