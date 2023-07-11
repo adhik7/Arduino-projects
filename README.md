@@ -1,3 +1,3 @@
 # Arduino-projects
-These projects done without using arduino function
-by only using c.
+These projects done without using arduino function,
+done by only using c .
